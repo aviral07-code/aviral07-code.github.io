@@ -568,8 +568,29 @@
     <p>&copy; <span id="year"></span> Aviral Garg. All rights reserved.</p>
   </footer>
 
-  <script>
+    <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Courses toggle
+    const pillButtons = document.querySelectorAll(".pill-toggle-btn");
+    const coursePanels = document.querySelectorAll(".courses-panel");
+
+    pillButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const targetId = btn.getAttribute("data-target");
+
+        pillButtons.forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+
+        coursePanels.forEach((panel) => {
+          panel.classList.toggle(
+            "active",
+            panel.id === targetId
+          );
+        });
+      });
+    });
   </script>
 </body>
 </html>
+
