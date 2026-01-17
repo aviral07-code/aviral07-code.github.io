@@ -621,81 +621,84 @@
     });
   </script>
 </body>
-</html>
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
 
-  // Courses toggle
-  const pillButtons = document.querySelectorAll(".pill-toggle-btn");
-  const coursePanels = document.querySelectorAll(".courses-panel");
+    // Courses toggle
+    const pillButtons = document.querySelectorAll(".pill-toggle-btn");
+    const coursePanels = document.querySelectorAll(".courses-panel");
 
-  pillButtons.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const targetId = btn.getAttribute("data-target");
+    pillButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const targetId = btn.getAttribute("data-target");
 
-      pillButtons.forEach((b) => b.classList.remove("active"));
-      btn.classList.add("active");
+        pillButtons.forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
 
-      coursePanels.forEach((panel) => {
-        panel.classList.toggle("active", panel.id === targetId);
+        coursePanels.forEach((panel) => {
+          panel.classList.toggle("active", panel.id === targetId);
+        });
       });
     });
-  });
 
-  // Typewriter roles in hero
-  (function () {
-    const el = document.querySelector(".hero-roles-typing");
-    if (!el) return;
-    const roles = JSON.parse(el.getAttribute("data-roles") || "[]");
-    let index = 0;
-    let charIndex = 0;
-    let deleting = false;
+    // Typewriter roles in hero
+    (function () {
+      const el = document.querySelector(".hero-roles-typing");
+      if (!el) return;
+      const roles = JSON.parse(el.getAttribute("data-roles") || "[]");
+      let index = 0;
+      let charIndex = 0;
+      let deleting = false;
 
-    function tick() {
-      const current = roles[index] || "";
-      if (!deleting) {
-        charIndex++;
-        if (charIndex >= current.length + 3) {
-          deleting = true;
-          setTimeout(tick, 900);
-          return;
-        }
-      } else {
-        charIndex--;
-        if (charIndex <= 0) {
-          deleting = false;
-          index = (index + 1) % roles.length;
-        }
-      }
-      el.textContent = current.slice(0, Math.max(charIndex, 0));
-      setTimeout(tick, deleting ? 45 : 80);
-    }
-
-    tick();
-  })();
-
-  // Scroll reveal using IntersectionObserver
-  (function () {
-    const revealEls = document.querySelectorAll(".reveal");
-    if (!("IntersectionObserver" in window) || !revealEls.length) {
-      revealEls.forEach((el) => el.classList.add("reveal-visible"));
-      return;
-    }
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("reveal-visible");
-            observer.unobserve(entry.target);
+      function tick() {
+        const current = roles[index] || "";
+        if (!deleting) {
+          charIndex++;
+          if (charIndex >= current.length + 3) {
+            deleting = true;
+            setTimeout(tick, 900);
+            return;
           }
-        });
-      },
-      {
-        threshold: 0.15,
+        } else {
+          charIndex--;
+          if (charIndex <= 0) {
+            deleting = false;
+            index = (index + 1) % roles.length;
+          }
+        }
+        el.textContent = current.slice(0, Math.max(charIndex, 0));
+        setTimeout(tick, deleting ? 45 : 80);
       }
-    );
 
-    revealEls.forEach((el) => observer.observe(el));
-  })();
-</script>
+      tick();
+    })();
+
+    // Scroll reveal using IntersectionObserver
+    (function () {
+      const revealEls = document.querySelectorAll(".reveal");
+      if (!("IntersectionObserver" in window) || !revealEls.length) {
+        revealEls.forEach((el) => el.classList.add("reveal-visible"));
+        return;
+      }
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("reveal-visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+
+      revealEls.forEach((el) => observer.observe(el));
+    })();
+  </script>
+</body>
+</html>
+
+  
