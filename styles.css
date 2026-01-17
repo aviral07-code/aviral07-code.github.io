@@ -662,8 +662,6 @@ body {
 }
 
 @media (max-width: 540px) {
-
-  {
   .edu-item {
     grid-template-columns: 1fr;
     text-align: left;
@@ -672,6 +670,7 @@ body {
   .edu-logo-block {
     justify-content: flex-start;
   }
+
   .hero-title {
     font-size: 2.1rem;
   }
