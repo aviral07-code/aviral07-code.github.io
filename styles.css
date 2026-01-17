@@ -466,6 +466,25 @@ body {
   padding-left: 18px;
   margin: 0;
 }
+.featured-course {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.18), rgba(129, 140, 248, 0.32));
+  color: #e5e7eb;
+  font-size: 0.86rem;
+  border: 1px solid rgba(56, 189, 248, 0.65);
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.8);
+  gap: 6px;
+}
+
+.featured-course::before {
+  content: "★";
+  font-size: 0.7rem;
+  color: #facc15;
+}
+
 
 /* Education */
 
