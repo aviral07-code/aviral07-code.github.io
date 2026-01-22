@@ -527,9 +527,9 @@
     // Set Year
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    // Courses toggle
+    // --- UPDATED COURSES TOGGLE ---
     const pillButtons = document.querySelectorAll(".pill-toggle-btn");
-    const coursePanels = document.querySelectorAll(".courses-panel");
+    const coursePanels = document.querySelectorAll(".courses-panel-modern");
 
     pillButtons.forEach((btn) => {
       btn.addEventListener("click", () => {
@@ -539,7 +539,13 @@
         btn.classList.add("active");
 
         coursePanels.forEach((panel) => {
-          panel.classList.toggle("active", panel.id === targetId);
+          if (panel.id === targetId) {
+            panel.classList.add("active");
+            panel.style.display = "block";
+          } else {
+            panel.classList.remove("active");
+            panel.style.display = "none";
+          }
         });
       });
     });
