@@ -821,16 +821,16 @@ body::after {
   transform: scale(1.05);
 }
 
-/* The Text Content Below the Image */
+/* The Text Content Below the Image - Adjusted Padding */
 .card-content {
-  padding: 20px 24px;
-  background: rgba(15, 23, 42, 0.6); /* Slightly darker bottom half */
-  flex-grow: 1; /* Ensures cards align nicely if heights vary slightly */
+  padding: 24px 28px;
+  background: rgba(15, 23, 42, 0.6);
+  flex-grow: 1;
 }
 
 .card-content h3 {
   margin: 0 0 6px;
-  font-size: 1.15rem;
+  font-size: 1.3rem; /* Increased size for visual balance */
   color: var(--text);
 }
 
@@ -840,10 +840,19 @@ body::after {
   opacity: 0.8;
 }
 
-/* Responsive Grid Adjustment for Images */
+/* --- FORCE 2-COLUMN LAYOUT FOR PROJECTS --- */
+
+/* This targets the specific projects section to force bigger cards */
 @media (min-width: 768px) {
-  .project-grid {
-    /* CHANGED: Increased from 320px to 450px to force bigger 2-column layout */
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  #projects .card-grid {
+    /* Forces exactly 2 columns. This makes images 50% wider */
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+
+/* On very large screens, keep it 2 columns to maintain the large visual impact */
+@media (min-width: 1200px) {
+  #projects .card-grid {
+    grid-template-columns: 1fr 1fr !important;
   }
 }
