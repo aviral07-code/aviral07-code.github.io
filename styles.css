@@ -843,6 +843,7 @@ body::after {
 /* Responsive Grid Adjustment for Images */
 @media (min-width: 768px) {
   .project-grid {
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    /* CHANGED: Increased from 320px to 450px to force bigger 2-column layout */
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   }
 }
