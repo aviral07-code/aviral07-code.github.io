@@ -784,9 +784,65 @@ body::after {
 
   .hero-title {
     font-size: 2.1rem;
-  }
-
-  .hero-subtitle {
     font-size: 0.95rem;
+  }
+}
+
+/* --- Project Card Enhancements (Image Replacement) --- */
+
+/* Remove default padding from project cards to allow full-width images */
+.card.project-card {
+  padding: 0;
+  overflow: hidden; /* Ensures image respects the rounded corners */
+  display: flex;
+  flex-direction: column;
+}
+
+/* The Image Container */
+.card-image-wrapper {
+  width: 100%;
+  /* Optional: Sets a background if image loads slowly */
+  background: rgba(2, 6, 23, 0.5);
+  border-bottom: 1px solid rgba(56, 189, 248, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+/* The Image Itself */
+.card-image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Hover Effect: Subtle Zoom */
+.card.project-card:hover .card-image-wrapper img {
+  transform: scale(1.05);
+}
+
+/* The Text Content Below the Image */
+.card-content {
+  padding: 20px 24px;
+  background: rgba(15, 23, 42, 0.6); /* Slightly darker bottom half */
+  flex-grow: 1; /* Ensures cards align nicely if heights vary slightly */
+}
+
+.card-content h3 {
+  margin: 0 0 6px;
+  font-size: 1.15rem;
+  color: var(--text);
+}
+
+.card-content .card-meta {
+  margin: 0;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/* Responsive Grid Adjustment for Images */
+@media (min-width: 768px) {
+  .project-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   }
 }
