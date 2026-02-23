@@ -309,6 +309,7 @@ body::after {
 .reveal-delay-5 { transition-delay: 0.3s; }
 .reveal-delay-6 { transition-delay: 0.35s; }
 .reveal-delay-7 { transition-delay: 0.4s; }
+.reveal-delay-8 { transition-delay: 0.45s; }
 
 /* Responsive Overrides */
 @media (max-width: 840px) {
