@@ -2,27 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Aviral Garg | Portfolio</title>
+  <title>Aviral Garg | Software &amp; ML Engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="description"
-    content="Portfolio of Aviral Garg, Master's in Computer Science at University of Kentucky, focusing on AI, ML, and distributed systems."
+    content="Aviral Garg — Software & ML Engineer with a Master's in Computer Science from the University of Kentucky. I build reinforcement-learning trading systems, scalable serverless backends, and polished user interfaces."
   />
+  <meta name="theme-color" content="#0b0f19" />
+  <link rel="canonical" href="https://aviral07-code.github.io/" />
+
+  <!-- Social previews (LinkedIn, Slack, email clients) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Aviral Garg | Software & ML Engineer" />
+  <meta
+    property="og:description"
+    content="Master's in Computer Science (University of Kentucky) specializing in AI, ML, and distributed systems. Explore my projects, experience, and skills."
+  />
+  <meta property="og:url" content="https://aviral07-code.github.io/" />
+  <meta property="og:image" content="https://aviral07-code.github.io/assets/profile.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Aviral Garg | Software & ML Engineer" />
+  <meta
+    name="twitter:description"
+    content="Master's in Computer Science (University of Kentucky) specializing in AI, ML, and distributed systems."
+  />
+  <meta name="twitter:image" content="https://aviral07-code.github.io/assets/profile.webp" />
+
+  <!-- Favicon: inline "AG" monogram matching the nav logo -->
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0f19'/%3E%3Ctext x='32' y='42' font-family='monospace' font-size='26' font-weight='700' fill='%2360a5fa' text-anchor='middle'%3EAG%3C/text%3E%3C/svg%3E"
+  />
+
   <link rel="stylesheet" href="styles.css" />
-  
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
     rel="stylesheet"
   />
 </head>
 <body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
   <header class="top-nav">
     <div class="nav-left">
       <a href="#hero" class="logo">AG</a>
     </div>
-    <nav class="nav-links">
+    <nav class="nav-links" id="navLinks">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
@@ -31,27 +60,37 @@
       <a href="#education">Education</a>
       <a href="#certifications">Certifications</a>
       <a href="#contact">Contact</a>
+      <a href="assets/resume.pdf" class="nav-resume" target="_blank" rel="noreferrer">Resume</a>
     </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </header>
 
   <section id="hero" class="hero section">
     <div class="hero-content hero-layout">
       <div class="hero-text">
-        <p class="hero-kicker">Master's in Computer Science · 2024–2026</p>
+        <p class="hero-kicker">M.S. Computer Science · University of Kentucky · Class of 2026</p>
+        <span class="status-pill"><span class="status-dot"></span>Open to Software & ML Engineering roles</span>
         <h1 class="hero-title">Hi, I'm <span class="accent">Aviral Garg</span>.</h1>
         <p class="hero-roles">
           <span class="hero-roles-label">Building as a</span>
           <span class="hero-roles-typing" data-roles='["Software Engineer","ML Engineer","Systems Engineer","Full‑stack Developer","AI Engineer"]'></span>
         </p>
         <p class="hero-subtitle">
-          Graduated from the University of Kentucky specializing in
-          AI, machine learning, and distributed systems. I build
-          data-driven trading systems, scalable serverless backends, and
-          polished user interfaces.
+          I design and ship reinforcement-learning trading systems,
+          scalable serverless backends, and clean, usable interfaces —
+          turning research ideas into production-ready software. Grounded
+          in AI/ML and distributed systems from my Master's at the
+          University of Kentucky.
         </p>
         <div class="hero-cta">
           <a href="#projects" class="btn primary">View my projects</a>
-          <a href="#contact" class="btn secondary">Contact me</a>
+          <a href="assets/resume.pdf" class="btn secondary" target="_blank" rel="noreferrer">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+            Download resume
+          </a>
+          <a href="#contact" class="link-ghost">Let's talk &rarr;</a>
         </div>
         <div class="hero-meta">
           <span>Lexington, Kentucky</span>
@@ -67,7 +106,7 @@
       <div class="hero-photo-wrapper">
         <div class="hero-photo-ring"></div>
         <div class="hero-photo">
-          <img src="assets/IMG_1261.jpeg" alt="Portrait of Aviral Garg" />
+          <img src="assets/profile.webp" alt="Portrait of Aviral Garg" />
         </div>
       </div>
     </div>
@@ -85,7 +124,7 @@
     <div class="two-column">
       <div>
         <p>
-          I completed Master's in Computer Science at the University
+          I hold a Master's in Computer Science from the University
           of Kentucky, with a focus on AI, ML, and cloud-native systems.
           My work spans dynamic portfolio management with bandit
           algorithms, serverless autoscaling on Knative, and robust
@@ -95,10 +134,10 @@
       <div>
         <p>
           Beyond research projects, I've shipped front-end interfaces
-          for LLM and RAG-powered tools, designed medical device
-          software in industry, and built full-stack applications with
-          modern web technologies. I enjoy turning ideas into
-          measurable results and well-engineered systems. 
+          for LLM and RAG-powered tools, engineered medical device
+          software for clinical use, and built full-stack applications
+          with modern web technologies. I enjoy turning ideas into
+          measurable results and well-engineered systems.
         </p>
       </div>
     </div>
@@ -117,30 +156,30 @@
       <div class="skill-card reveal reveal-delay-2">
         <h3>Machine Learning & AI</h3>
         <p>
-          PyTorch, TensorFlow, Scikit-learn, Deep Reinforcement Learning (DRL), Transformers,Hugging Face,
-NLTK, spaCy, Gradio, RAG (Retrieval-Augmented Generation) Interfaces, Large language models (LLM), Sequential decision
-making, Markov Decision Processes (MDP), Data Mining, Statistical modeling.
+          PyTorch, TensorFlow, Scikit-learn, Deep Reinforcement Learning (DRL), Transformers, Hugging Face,
+          NLTK, spaCy, Gradio, RAG (Retrieval-Augmented Generation) Interfaces, Large Language Models (LLM), Sequential Decision
+          Making, Markov Decision Processes (MDP), Data Mining, Statistical Modeling.
         </p>
       </div>
       <div class="skill-card reveal reveal-delay-3">
         <h3>Data & NLP</h3>
         <p>
-          NumPy, Pandas, y-finance, BeautifulSoup, Scrapy, Automated Data Logging, QA/QC Workflows, File
-Management, Pattern discovery, Clustering Algorithms.
+          NumPy, Pandas, yfinance, BeautifulSoup, Scrapy, Automated Data Logging, QA/QC Workflows, File
+          Management, Pattern Discovery, Clustering Algorithms.
         </p>
       </div>
       <div class="skill-card reveal reveal-delay-4">
         <h3>Cloud & Systems</h3>
         <p>
-          WS, Docker, Kubernetes, Knative (Serving/Eventing), Serverless Architecture, RPC, Distributed Systems,
-Linux (Ubuntu/Debian), Grafana, Network security, Cryptographic Controls, Compiler construction, Lexical analysis.
+          AWS, Docker, Kubernetes, Knative (Serving/Eventing), Serverless Architecture, RPC, Distributed Systems,
+          Linux (Ubuntu/Debian), Grafana, Network Security, Cryptographic Controls, Compiler Construction, Lexical Analysis.
         </p>
       </div>
       <div class="skill-card reveal reveal-delay-5">
         <h3>Web & UI</h3>
         <p>
-          Front-end development, UI/UX, .NET UI, LLM + RAG interfaces,
-          Android Studio, Firebase, Maps API, ReactJs,React Native, XCode, Linux OS, Gradio, UI/UX Design Principles, Advanced algo Design, Complexity analysis, Automata Theory.
+          Front-end Development, UI/UX Design, .NET UI, LLM + RAG Interfaces,
+          Android Studio, Firebase, Maps API, React, React Native, Xcode, Linux, Gradio, Algorithm Design, Complexity Analysis, Automata Theory.
         </p>
       </div>
       <div class="skill-card reveal reveal-delay-6">
@@ -164,16 +203,16 @@ Linux (Ubuntu/Debian), Grafana, Network security, Cryptographic Controls, Compil
         </p>
         <ul>
           <li>
-            <strong>Software & Data Automation:</strong> Develop Python scripts for data parsing and visualization while establishing automated QA/QC workflows and file organization systems for research sensors.
+            <strong>Software & Data Automation:</strong> Built Python scripts for data parsing and visualization, and established automated QA/QC workflows and file organization systems across <strong>45+ sensors and controllers</strong> spanning <strong>3 research systems</strong>.
           </li>
           <li>
-            <strong>Systems Instrumentation:</strong> Assist in the design, fabrication, and calibration of mechanical and electrical assemblies, including troubleshooting controllers and data acquisition hardware.
+            <strong>Systems Instrumentation:</strong> Designed, fabricated, and calibrated mechanical and electrical assemblies, tuning controllers and data acquisition hardware to hold temperature error margins within <strong>0–1°</strong>.
           </li>
           <li>
-            <strong>Technical Leadership:</strong> Coordinate daily progress for an interdisciplinary team of undergraduate students, providing technical guidance on instrumentation builds and ensuring strict safety compliance.
+            <strong>Technical Leadership:</strong> Coordinated daily progress for a <strong>5-person</strong> interdisciplinary team of undergraduate students, providing technical guidance on instrumentation builds and enforcing strict safety compliance.
           </li>
           <li>
-            <strong>Technical Documentation:</strong> Support the drafting of an ASABE technical publication by compiling system diagrams, performance metrics, and validation results for a novel cold hardiness system.
+            <strong>Technical Documentation:</strong> Supported the drafting of an ASABE technical publication by compiling system diagrams, performance metrics, and validation results for a novel cold hardiness system.
           </li>
         </ul>
       </article>
@@ -186,17 +225,13 @@ Linux (Ubuntu/Debian), Grafana, Network security, Cryptographic Controls, Compil
         </p>
         <ul>
           <li>
-            Developed user interfaces and optimized UX for applications
-            leveraging LLM models and Retrieval Augmented Generation
-            (RAG). 
+            <strong>Interface & UX:</strong> Developed user interfaces and optimized UX for applications leveraging LLM models and Retrieval-Augmented Generation (RAG).
           </li>
           <li>
-            Utilized LlamaIndex and FAISS for vector search, improving
-            retrieval speed and accuracy in complex datasets. 
+            <strong>Vector Search & Dashboards:</strong> Built a high-speed, highly scalable retrieval pipeline with LlamaIndex and FAISS vector databases, paired with an intuitive Gradio dashboard for exploring results.
           </li>
           <li>
-            Managed NLP-driven data cleaning and backend integration
-            with DBMS for robust, scalable front-end solutions. 
+            <strong>Scalable Deployment:</strong> Deployed across university servers and virtual machines to support a large concurrent user base, backed by NLP-driven data cleaning and DBMS integration.
           </li>
         </ul>
       </article>
@@ -209,17 +244,13 @@ Linux (Ubuntu/Debian), Grafana, Network security, Cryptographic Controls, Compil
         </p>
         <ul>
           <li>
-            Designed software and user interfaces for medical devices
-            (EEG, ECG, X-ray, BP monitor) using Microsoft .NET with a
-            focus on clinical usability. 
+            <strong>Clinical Software Design:</strong> Designed software and user interfaces for medical devices — EEG, ECG, X-ray, and BP monitors — using Microsoft .NET with a focus on clinical usability.
           </li>
           <li>
-            Enhanced X-ray image quality and managed software deployment
-            on virtual machines to support diagnostic workflows. 
+            <strong>Large-Scale, Zero-Error Deployment:</strong> Engineered a service-oriented architecture for large-scale deployment across virtual machines, applying precision engineering practices where diagnostic accuracy left no room for error.
           </li>
           <li>
-            Worked with SQL and MongoDB for efficient data storage and
-            integration in embedded and medical systems. 
+            <strong>Data Integration:</strong> Enhanced X-ray image quality and integrated SQL and MongoDB for efficient data storage across embedded and medical systems.
           </li>
         </ul>
       </article>
@@ -236,57 +267,62 @@ Linux (Ubuntu/Debian), Grafana, Network security, Cryptographic Controls, Compil
       
       <article class="card project-card reveal reveal-delay-1">
         <div class="card-image-wrapper">
-          <img src="assets/Risk_aware.png" alt="Risk-Aware AI Portfolio Management Diagram" loading="lazy" />
+          <img src="assets/Risk_aware.webp" alt="Risk-Aware AI Portfolio Management Diagram" loading="lazy" />
         </div>
         <div class="card-content">
           <h3>Risk-Aware AI Portfolio Managing System</h3>
           <p class="card-meta">University of Kentucky · Jan 2026 – May 2026</p>
+          <p class="card-desc">Reinforcement-learning (PPO) portfolio manager with an LLM "risk auditor" that cross-checks allocations against live financial news for interpretable, risk-aware decisions.</p>
         </div>
       </article>
 
       <article class="card project-card reveal reveal-delay-2">
         <div class="card-image-wrapper">
-          <img src="assets/Portfolio_Management.png" alt="Dynamic Portfolio Management Diagram" loading="lazy" />
+          <img src="assets/Portfolio_Management.webp" alt="Dynamic Portfolio Management Diagram" loading="lazy" />
         </div>
         <div class="card-content">
           <h3>Dynamic Portfolio Management</h3>
           <p class="card-meta">University of Kentucky · Aug 2025 – Dec 2025</p>
+          <p class="card-desc">Benchmarked contextual-bandit (LinUCB) and deep RL (PPO) allocation strategies against baseline portfolios across SPY, QQQ, TLT, and GLD with realistic transaction costs.</p>
         </div>
       </article>
 
       <article class="card project-card reveal reveal-delay-3">
         <div class="card-image-wrapper">
-          <img src="assets/Autoscaling.png" alt="Knative Autoscaling Diagram" loading="lazy" />
+          <img src="assets/Autoscaling.webp" alt="Knative Autoscaling Diagram" loading="lazy" />
         </div>
         <div class="card-content">
           <h3>Knative Function Chain Autoscaling</h3>
           <p class="card-meta">University of Kentucky · Aug 2025 – Dec 2025</p>
+          <p class="card-desc">Compared concurrency-, RPS-, and custom position-aware autoscaling policies for chained serverless functions on a Kubernetes/Knative cluster under bursty load.</p>
         </div>
       </article>
 
       <article class="card project-card reveal reveal-delay-4">
         <div class="card-image-wrapper">
-          <img src="assets/File-server.png" alt="Stateful Network File Server Diagram" loading="lazy" />
+          <img src="assets/File-server.webp" alt="Stateful Network File Server Diagram" loading="lazy" />
         </div>
         <div class="card-content">
           <h3>Stateful Network File Server</h3>
           <p class="card-meta">University of Kentucky · Aug 2025 – Dec 2025</p>
+          <p class="card-desc">Sun RPC-based stateful file server in C supporting per-user quotas, fixed block allocation, and core file operations with strict resource isolation.</p>
         </div>
       </article>
 
       <article class="card project-card reveal reveal-delay-5">
         <div class="card-image-wrapper">
-          <img src="assets/Fake_news.png" alt="Fake News Detection Diagram" loading="lazy" />
+          <img src="assets/Fake_news.webp" alt="Fake News Detection Diagram" loading="lazy" />
         </div>
         <div class="card-content">
           <h3>Fake News Detection</h3>
           <p class="card-meta">University of Kentucky · Jan 2025 – May 2025</p>
+          <p class="card-desc">Built and compared classical (SVM/Naive Bayes + TF-IDF) and fine-tuned BERT models to classify misinformation across 40,000+ labeled news and social media samples.</p>
         </div>
       </article>
 
       <article class="card project-card reveal reveal-delay-6">
         <div class="card-image-wrapper">
-          <img src="assets/Helping_hand.png" alt="Helping Hand App Diagram" loading="lazy" />
+          <img src="assets/Helping_hand.webp" alt="Helping Hand App Diagram" loading="lazy" />
         </div>
         <div class="card-content">
           <h3>Helping Hand</h3>
@@ -296,7 +332,7 @@ Linux (Ubuntu/Debian), Grafana, Network security, Cryptographic Controls, Compil
 
       <article class="card project-card reveal reveal-delay-7">
         <div class="card-image-wrapper">
-          <img src="assets/Medipure.png" alt="Medipure Blockchain Diagram" loading="lazy" />
+          <img src="assets/Medipure.webp" alt="Medipure Blockchain Diagram" loading="lazy" />
         </div>
         <div class="card-content">
           <h3>Medipure</h3>
@@ -306,7 +342,7 @@ Linux (Ubuntu/Debian), Grafana, Network security, Cryptographic Controls, Compil
 
       <article class="card project-card reveal reveal-delay-8">
         <div class="card-image-wrapper">
-          <img src="assets/Robocar.png" alt="Robocar Diagram" loading="lazy" />
+          <img src="assets/Robocar.webp" alt="Robocar Diagram" loading="lazy" />
         </div>
         <div class="card-content">
           <h3>Robocar</h3>
@@ -491,6 +527,8 @@ Linux (Ubuntu/Debian), Grafana, Network security, Cryptographic Controls, Compil
     <p>&copy; <span id="year"></span> Aviral Garg. All rights reserved.</p>
   </footer>
 
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
+
   <script>
     // Set Year
     document.getElementById("year").textContent = new Date().getFullYear();
@@ -573,6 +611,123 @@ Linux (Ubuntu/Debian), Grafana, Network security, Cryptographic Controls, Compil
       );
 
       revealEls.forEach((el) => observer.observe(el));
+    })();
+
+    // Mobile hamburger navigation
+    (function () {
+      const toggle = document.getElementById("navToggle");
+      const navLinks = document.getElementById("navLinks");
+      if (!toggle || !navLinks) return;
+
+      toggle.addEventListener("click", () => {
+        const isOpen = navLinks.classList.toggle("open");
+        toggle.classList.toggle("open", isOpen);
+        toggle.setAttribute("aria-expanded", String(isOpen));
+      });
+
+      navLinks.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("open");
+          toggle.classList.remove("open");
+          toggle.setAttribute("aria-expanded", "false");
+        });
+      });
+    })();
+
+    // Scroll progress bar
+    (function () {
+      const bar = document.getElementById("scrollProgress");
+      if (!bar) return;
+      window.addEventListener(
+        "scroll",
+        () => {
+          const scrollTop = window.scrollY;
+          const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+          const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+          bar.style.width = pct + "%";
+        },
+        { passive: true }
+      );
+    })();
+
+    // Scrollspy: highlight nav link for the section currently in view.
+    // Uses a single scroll-position calculation (rather than IntersectionObserver
+    // margins) so exactly one link is ever active, deterministically.
+    (function () {
+      const sections = Array.from(document.querySelectorAll("section[id]"));
+      const navAnchors = document.querySelectorAll(".nav-links a[href^='#']");
+      if (!sections.length || !navAnchors.length) return;
+
+      let ticking = false;
+      function updateActive() {
+        const reference = window.scrollY + 140;
+        let currentId = sections[0].id;
+        for (const section of sections) {
+          if (section.offsetTop <= reference) currentId = section.id;
+        }
+        navAnchors.forEach((a) => {
+          a.classList.toggle("active", a.getAttribute("href") === `#${currentId}`);
+        });
+        ticking = false;
+      }
+
+      window.addEventListener(
+        "scroll",
+        () => {
+          if (!ticking) {
+            requestAnimationFrame(updateActive);
+            ticking = true;
+          }
+        },
+        { passive: true }
+      );
+
+      updateActive();
+    })();
+
+    // Subtle 3D tilt on cards
+    (function () {
+      const tiltEls = document.querySelectorAll(".project-card, .skill-card");
+      if (!tiltEls.length || window.matchMedia("(pointer: coarse)").matches) return;
+
+      tiltEls.forEach((el) => {
+        el.addEventListener("mousemove", (e) => {
+          const rect = el.getBoundingClientRect();
+          const x = (e.clientX - rect.left) / rect.width - 0.5;
+          const y = (e.clientY - rect.top) / rect.height - 0.5;
+          el.style.transform = `perspective(800px) rotateX(${-y * 6}deg) rotateY(${x * 6}deg) translateY(-5px)`;
+        });
+        el.addEventListener("mouseleave", () => {
+          el.style.transform = "";
+        });
+      });
+    })();
+
+    // Cursor-follow spotlight glow in the hero section
+    (function () {
+      const hero = document.getElementById("hero");
+      if (!hero || window.matchMedia("(pointer: coarse)").matches) return;
+      hero.addEventListener("mousemove", (e) => {
+        const rect = hero.getBoundingClientRect();
+        hero.style.setProperty("--spot-x", `${e.clientX - rect.left}px`);
+        hero.style.setProperty("--spot-y", `${e.clientY - rect.top}px`);
+      });
+    })();
+
+    // Back-to-top button
+    (function () {
+      const btn = document.getElementById("backToTop");
+      if (!btn) return;
+      window.addEventListener(
+        "scroll",
+        () => {
+          btn.classList.toggle("visible", window.scrollY > 500);
+        },
+        { passive: true }
+      );
+      btn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
     })();
   </script>
 </body>
