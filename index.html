@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Aviral Garg — AI, ML &amp; Software Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Aviral Garg — AI, ML & Software Engineer with a Master's in Computer Science from the University of Kentucky. RAG pipelines and agentic systems, reinforcement-learning trading, and autoscaling serverless backends."
+  />
+  <meta name="theme-color" content="#090a12" />
+  <link rel="canonical" href="https://aviral07-code.github.io/" />
+
+  <!-- Social previews (LinkedIn, Slack, email clients) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Aviral Garg — AI, ML & Software Engineer" />
+  <meta
+    property="og:description"
+    content="M.S. Computer Science (University of Kentucky). RAG & agentic AI, deep reinforcement learning, and cloud-native systems. IBM RAG and Agentic AI Professional Certificate — earned Aug 2026."
+  />
+  <meta property="og:url" content="https://aviral07-code.github.io/" />
+  <meta property="og:image" content="https://aviral07-code.github.io/assets/profile.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Aviral Garg — AI, ML & Software Engineer" />
+  <meta
+    name="twitter:description"
+    content="M.S. Computer Science (University of Kentucky). RAG & agentic AI, deep reinforcement learning, and cloud-native systems."
+  />
+  <meta name="twitter:image" content="https://aviral07-code.github.io/assets/profile.webp" />
+
+  <!-- Favicon: inline "ag" monogram in emerald -->
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23090a12'/%3E%3Ctext x='32' y='42' font-family='monospace' font-size='26' font-weight='700' fill='%23c2415f' text-anchor='middle'%3Eag%3C/text%3E%3C/svg%3E"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Structured data so search engines understand who this page is about -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Aviral Garg",
+    "jobTitle": "AI, ML & Software Engineer",
+    "url": "https://aviral07-code.github.io/",
+    "email": "mailto:aviralk.garg@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Lexington", "addressRegion": "KY", "addressCountry": "US" },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "University of Kentucky" },
+      { "@type": "CollegeOrUniversity", "name": "Thapar Institute of Engineering and Technology" }
+    ],
+    "knowsAbout": [
+      "Retrieval-Augmented Generation", "Agentic AI", "LangChain", "LangGraph",
+      "Model Context Protocol", "Vector Databases", "Deep Reinforcement Learning",
+      "Kubernetes", "Knative", "Distributed Systems"
+    ],
+    "hasCredential": {
+      "@type": "EducationalOccupationalCredential",
+      "name": "IBM RAG and Agentic AI Professional Certificate",
+      "credentialCategory": "Professional Certificate",
+      "dateCreated": "2026-08-03",
+      "url": "https://coursera.org/verify/professional-cert/6TGI0KQGL9VK",
+      "recognizedBy": { "@type": "Organization", "name": "IBM" }
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/aviral-garg-011273208",
+      "https://github.com/aviral07-code"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header class="top-nav">
+    <a href="#hero" class="logo"><span>~/</span>ag</a>
+
+    <nav class="nav-links" id="navLinks" aria-label="Primary">
+      <a href="#about">about</a>
+      <a href="#experience">experience</a>
+      <a href="#projects">projects</a>
+      <a href="#skills">skills</a>
+      <a href="#certifications">certifications</a>
+      <a href="#education">education</a>
+      <a href="#contact">contact</a>
+    </nav>
+
+    <div class="nav-right">
+      <button class="nav-search" id="navSearch" aria-label="Search this site">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <span class="nav-search-text">search</span>
+        <kbd id="searchHint">⌘K</kbd>
+      </button>
+      <a class="icon-link" href="https://github.com/aviral07-code" target="_blank" rel="noreferrer" aria-label="GitHub profile">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+      </a>
+      <a class="icon-link" href="https://www.linkedin.com/in/aviral-garg-011273208" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4V8h4v1.5"/><rect x="2" y="9" width="4" height="12" rx="1"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+      <a href="assets/resume.pdf" class="nav-resume" target="_blank" rel="noreferrer">resume</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ Status ticker ============ -->
+  <div class="ticker" id="ticker" aria-label="Availability and credentials">
+    <div class="ticker-track" id="tickerTrack">
+      <span class="ticker-item up"><span class="tk">open to</span><span class="tv">AI · ML · Software Engineering roles — 2026</span></span>
+      <span class="ticker-item blue"><span class="tk">availability</span><span class="tv">immediate</span></span>
+      <span class="ticker-item up"><span class="tk">work auth</span><span class="tv">F-1 OPT / STEM-OPT eligible</span></span>
+      <span class="ticker-item blue"><span class="tk">export control</span><span class="tv">eligible for employer-sponsored deemed-export licensing (ITAR / EAR)</span></span>
+      <span class="ticker-item up"><span class="tk">certified</span><span class="tv">IBM RAG &amp; Agentic AI Professional Certificate — Aug 2026</span></span>
+      <span class="ticker-item blue"><span class="tk">education</span><span class="tv">M.S. Computer Science · University of Kentucky</span></span>
+      <span class="ticker-item up"><span class="tk">focus</span><span class="tv">RAG · agentic systems · deep RL · distributed systems</span></span>
+      <span class="ticker-item blue"><span class="tk">based in</span><span class="tv">Lexington, KY · open to relocation</span></span>
+    </div>
+  </div>
+
+  <!-- Resume header — only rendered when the page is printed / saved as PDF -->
+  <div class="print-head" aria-hidden="true">
+    <h1>Aviral Garg</h1>
+    <p class="print-role">AI, ML &amp; Software Engineer · M.S. Computer Science, University of Kentucky</p>
+    <p class="print-contact">Lexington, KY · aviralk.garg@gmail.com · +1 (859) 433-9706 · github.com/aviral07-code · linkedin.com/in/aviral-garg-011273208<br />F-1 OPT / STEM-OPT eligible · Eligible for employer-sponsored deemed-export licensing (ITAR / EAR)</p>
+  </div>
+
+  <main id="main">
+
+    <!-- ============ Hero ============ -->
+    <section id="hero" class="hero" data-screen-label="Hero">
+      <canvas id="synapse" aria-hidden="true"></canvas>
+
+      <div class="hero-content">
+        <h1 class="hero-title">Aviral <span class="grad">Garg</span></h1>
+
+        <p class="hero-roles">
+          <span class="prompt">&gt;</span><span
+            class="hero-roles-typing"
+            data-roles='["AI Engineer","Agentic AI Engineer","Software Engineer","ML Engineer","Systems Engineer","Full-stack Developer"]'
+          ></span><span class="caret" aria-hidden="true"></span>
+        </p>
+
+        <p class="hero-subtitle">
+          I turn research ideas into production software —
+          <strong>RAG pipelines and agentic AI systems</strong>,
+          <strong>reinforcement-learning trading systems</strong>, and
+          <strong>autoscaling serverless backends</strong> on Kubernetes.
+          M.S. in Computer Science, University of Kentucky.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn primary">View projects</a>
+          <a href="assets/resume.pdf" class="btn secondary" target="_blank" rel="noreferrer">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+            Download resume
+          </a>
+        </div>
+
+        <a class="cred-ribbon earned" href="#certifications">
+          <span class="cred-mark">IBM</span>
+          <span class="cred-text">
+            <strong>RAG and Agentic AI Professional Certificate</strong>
+            <span class="cred-sub">Coursera · advanced 10-course program · earned Aug 2026</span>
+          </span>
+          <span class="cred-seal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"/></svg>
+            <span>complete</span>
+          </span>
+          <span class="cred-go" aria-hidden="true">→</span>
+        </a>
+
+        <div class="hero-meta">
+          <span>Lexington, Kentucky</span>
+          <span>·</span>
+          <a href="mailto:aviralk.garg@gmail.com">aviralk.garg@gmail.com</a>
+          <span>·</span>
+          <a href="https://github.com/aviral07-code" target="_blank" rel="noreferrer">GitHub</a>
+          <span>·</span>
+          <a href="https://www.linkedin.com/in/aviral-garg-011273208" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-num"><span data-count="10">0</span><span class="unit">/10</span></div>
+          <div class="stat-label">IBM RAG &amp; agentic AI courses</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num"><span data-count="45">0</span><span class="unit">+</span></div>
+          <div class="stat-label">sensors &amp; controllers automated</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num"><span data-count="40">0</span><span class="unit">K+</span></div>
+          <div class="stat-label">news samples classified with BERT</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num"><span data-count="8">0</span></div>
+          <div class="stat-label">projects built &amp; shipped</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ About ============ -->
+    <section id="about" class="section reveal" data-screen-label="About">
+      <div class="section-header">
+        <p class="eyebrow">~/about</p>
+        <h2>Research ideas, production software.</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-photo reveal reveal-delay-1">
+          <img src="assets/profile.webp" alt="Portrait of Aviral Garg" />
+        </div>
+        <div class="about-copy reveal reveal-delay-2">
+          <p>
+            <strong>M.S. in Computer Science, University of Kentucky</strong> —
+            AI/ML and cloud-native systems. I build software that has to hold up:
+            retrieval and agent pipelines, deep-RL portfolio managers, and
+            clinical device software where a wrong number is a wrong diagnosis.
+          </p>
+          <dl class="about-facts">
+            <div>
+              <dt>now</dt>
+              <dd>RAG, agentic systems, and MCP — <strong>IBM's advanced 10-course program, completed Aug 2026</strong>, capstone included. Every pattern rebuilt by hand until the latency, cost, and reliability tradeoffs were second nature.</dd>
+            </div>
+            <div>
+              <dt>before</dt>
+              <dd>Research engineering and LLM/RAG interfaces at the University of Kentucky; <strong>EEG, ECG, and X-ray software</strong> shipped at scale in India.</dd>
+            </div>
+            <div>
+              <dt>next</dt>
+              <dd>AI, software, and ML engineering roles for 2026 — F-1 OPT / STEM-OPT eligible and eligible for deemed-export licensing.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Experience ============ -->
+    <section id="experience" class="section section-alt reveal" data-screen-label="Experience">
+      <div class="section-header">
+        <p class="eyebrow">~/experience</p>
+        <h2>Where I've worked</h2>
+        <p class="section-sub">Roles across research engineering, ML interfaces, and clinical software.</p>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item reveal reveal-delay-1">
+          <h3>Student Engineering Technician</h3>
+          <p class="timeline-meta">University of Kentucky · Feb 2026 – May 2026</p>
+          <ul>
+            <li>
+              <strong>Software &amp; data automation:</strong> Built Python scripts for data parsing and visualization, and established automated QA/QC workflows and file organization systems across <strong>45+ sensors and controllers</strong> spanning <strong>3 research systems</strong>.
+            </li>
+            <li>
+              <strong>Systems instrumentation:</strong> Designed, fabricated, and calibrated mechanical and electrical assemblies, tuning controllers and data acquisition hardware to hold temperature error margins within <strong>0–1°</strong>.
+            </li>
+            <li>
+              <strong>Technical leadership:</strong> Coordinated daily progress for a <strong>5-person</strong> interdisciplinary team of undergraduate students, providing technical guidance on instrumentation builds and enforcing strict safety compliance.
+            </li>
+            <li>
+              <strong>Technical documentation:</strong> Supported the drafting of an ASABE technical publication by compiling system diagrams, performance metrics, and validation results for a novel cold hardiness system.
+            </li>
+          </ul>
+          <div class="proj-links">
+            <a href="https://github.com/aviral07-code/DTA-Analysis-Tool" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              DTA Analysis Tool
+            </a>
+            <a href="https://github.com/aviral07-code/Polar_Pods_Control" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              Polar Pods Control
+            </a>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal reveal-delay-2">
+          <h3>Front End Developer</h3>
+          <p class="timeline-meta">Department of Computer Science · University of Kentucky · Sept 2024 – Jan 2025</p>
+          <ul>
+            <li>
+              <strong>Interface &amp; UX:</strong> Developed user interfaces and optimized UX for applications leveraging LLM models and Retrieval-Augmented Generation (RAG).
+            </li>
+            <li>
+              <strong>Vector search &amp; dashboards:</strong> Built a high-speed, highly scalable retrieval pipeline with LlamaIndex and FAISS vector databases, paired with an intuitive Gradio dashboard for exploring results.
+            </li>
+            <li>
+              <strong>Scalable deployment:</strong> Deployed across university servers and virtual machines to support a large concurrent user base, backed by NLP-driven data cleaning and DBMS integration.
+            </li>
+          </ul>
+          <div class="proj-links">
+            <a href="https://github.com/MultifacetedNLP/RAG-Lib" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              RAG-Lib · MultifacetedNLP
+            </a>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal reveal-delay-3">
+          <h3>Software Engineer, R&amp;D</h3>
+          <p class="timeline-meta">Recorders &amp; Medicare Systems · Panchkula, India · July 2022 – June 2023</p>
+          <ul>
+            <li>
+              <strong>Clinical software design:</strong> Designed software and user interfaces for medical devices — EEG, ECG, X-ray, and BP monitors — using Microsoft .NET with a focus on clinical usability.
+            </li>
+            <li>
+              <strong>Large-scale, zero-error deployment:</strong> Engineered a service-oriented architecture for large-scale deployment across virtual machines, applying precision engineering practices where diagnostic accuracy left no room for error.
+            </li>
+            <li>
+              <strong>Data integration:</strong> Enhanced X-ray image quality and integrated SQL and MongoDB for efficient data storage across embedded and medical systems.
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ Projects ============ -->
+    <section id="projects" class="section reveal" data-screen-label="Projects">
+      <div class="section-header">
+        <p class="eyebrow">~/projects</p>
+        <h2>Selected work</h2>
+        <p class="section-sub">Reinforcement learning, distributed systems, and NLP — built at the University of Kentucky. Every project below ships with source.</p>
+      </div>
+
+      <div class="featured-stack">
+
+        <article class="featured reveal">
+          <div class="featured-media">
+            <img src="assets/Risk_aware.webp" alt="Architecture diagram of the Risk-Aware AI Portfolio Managing System" loading="lazy" />
+          </div>
+          <div class="featured-body">
+            <p class="proj-meta">University of Kentucky · Jan 2026 – May 2026</p>
+            <h3>Risk-Aware AI Portfolio Managing System</h3>
+            <p class="proj-desc">
+              Reinforcement-learning (PPO) portfolio manager with an LLM
+              "risk auditor" that cross-checks allocations against live financial
+              news for interpretable, risk-aware decisions.
+            </p>
+            <div class="tag-row">
+              <span class="tag">PPO</span>
+              <span class="tag">Deep RL</span>
+              <span class="tag">LLM auditor</span>
+              <span class="tag">Python</span>
+            </div>
+            <div class="proj-links">
+              <a href="https://github.com/aviral07-code/RiskAware_AI_Portfolio_management_System-" target="_blank" rel="noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                Source
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="featured reverse reveal">
+          <div class="featured-media">
+            <img src="assets/Portfolio_Management.webp" alt="Diagram of the Dynamic Portfolio Management benchmarking pipeline" loading="lazy" />
+          </div>
+          <div class="featured-body">
+            <p class="proj-meta">University of Kentucky · Aug 2025 – Dec 2025</p>
+            <h3>Dynamic Portfolio Management</h3>
+            <p class="proj-desc">
+              Benchmarked contextual-bandit (LinUCB) and deep RL (PPO) allocation
+              strategies against baseline portfolios across SPY, QQQ, TLT, and
+              GLD with realistic transaction costs.
+            </p>
+            <div class="tag-row">
+              <span class="tag">LinUCB</span>
+              <span class="tag">PPO</span>
+              <span class="tag">Contextual bandits</span>
+              <span class="tag">Backtesting</span>
+            </div>
+            <div class="proj-links">
+              <a href="https://github.com/aviral07-code/Dynamic_potfolio_management" target="_blank" rel="noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                Source
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="featured reveal">
+          <div class="featured-media">
+            <img src="assets/Autoscaling.webp" alt="Diagram of Knative function chain autoscaling experiment" loading="lazy" />
+          </div>
+          <div class="featured-body">
+            <p class="proj-meta">University of Kentucky · Aug 2025 – Dec 2025</p>
+            <h3>Knative Function Chain Autoscaling</h3>
+            <p class="proj-desc">
+              Compared concurrency-, RPS-, and custom position-aware autoscaling
+              policies for chained serverless functions on a Kubernetes/Knative
+              cluster under bursty load.
+            </p>
+            <div class="tag-row">
+              <span class="tag">Kubernetes</span>
+              <span class="tag">Knative</span>
+              <span class="tag">Serverless</span>
+              <span class="tag">Autoscaling</span>
+            </div>
+            <div class="proj-links">
+              <a href="https://github.com/aviral07-code/Knative-function-chain" target="_blank" rel="noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                Source
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card reveal reveal-delay-1">
+          <div class="card-image">
+            <img src="assets/File-server.webp" alt="Diagram of the stateful network file server" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3>Stateful Network File Server</h3>
+            <p class="proj-meta">University of Kentucky · Aug 2025 – Dec 2025</p>
+            <p class="proj-desc">
+              Sun RPC-based stateful file server in C supporting per-user quotas,
+              fixed block allocation, and core file operations with strict
+              resource isolation.
+            </p>
+            <div class="tag-row">
+              <span class="tag">C</span>
+              <span class="tag">Sun RPC</span>
+              <span class="tag">Systems</span>
+            </div>
+            <div class="proj-links">
+              <a href="https://github.com/aviral07-code/Stateful-Network-file-server" target="_blank" rel="noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                Source
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal reveal-delay-2">
+          <div class="card-image">
+            <img src="assets/Fake_news.webp" alt="Diagram of the fake news detection pipeline" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3>Fake News Detection</h3>
+            <p class="proj-meta">University of Kentucky · Jan 2025 – May 2025</p>
+            <p class="proj-desc">
+              Built and compared classical (SVM/Naive Bayes + TF-IDF) and
+              fine-tuned BERT models to classify misinformation across 40,000+
+              labeled news and social media samples.
+            </p>
+            <div class="tag-row">
+              <span class="tag">BERT</span>
+              <span class="tag">SVM</span>
+              <span class="tag">TF-IDF</span>
+              <span class="tag">NLP</span>
+            </div>
+            <div class="proj-links">
+              <a href="https://github.com/aviral07-code/Fake-news-detection-on-social-media-" target="_blank" rel="noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                Source
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <p class="earlier-label">earlier work — B.Tech, Thapar Institute</p>
+      <div class="earlier-grid">
+        <article class="earlier-card reveal reveal-delay-1">
+          <img src="assets/Helping_hand.webp" alt="Helping Hand app diagram" loading="lazy" />
+          <div>
+            <h4>Helping Hand</h4>
+            <p class="earlier-kind">Mobile app · 2020</p>
+            <p class="earlier-desc">Full-stack Android app with Firebase and the Google Maps API for live tracking and routing.</p>
+          </div>
+        </article>
+        <article class="earlier-card reveal reveal-delay-2">
+          <img src="assets/Medipure.webp" alt="Medipure blockchain diagram" loading="lazy" />
+          <div>
+            <h4>Medipure</h4>
+            <p class="earlier-kind">Blockchain supply chain · 2021</p>
+            <p class="earlier-desc">Drug supply-chain tracking on Hyperledger Fabric with Solidity smart contracts and MetaMask.</p>
+          </div>
+        </article>
+        <article class="earlier-card reveal reveal-delay-3">
+          <img src="assets/Robocar.webp" alt="Robocar diagram" loading="lazy" />
+          <div>
+            <h4>Robocar</h4>
+            <p class="earlier-kind">Embedded systems · 2020</p>
+            <p class="earlier-desc">Arduino autonomous robot in C++ processing real-time IR and ultrasonic sensor telemetry.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ Skills ============ -->
+    <section id="skills" class="section section-alt reveal" data-screen-label="Skills">
+      <div class="section-header">
+        <p class="eyebrow">~/skills</p>
+        <h2>Tools I work with</h2>
+        <p class="section-sub">
+          Chips marked with a dot are backed by evidence — click one to see the
+          projects, roles, and certificates where I used it.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-group reveal reveal-delay-1">
+          <h3>Generative AI &amp; Agents</h3>
+          <div class="chip-row">
+            <span class="chip" data-ev>LLMs</span><span class="chip" data-ev>RAG</span>
+            <span class="chip" data-ev>Agentic AI</span><span class="chip" data-ev>LangChain</span>
+            <span class="chip" data-ev>LangGraph</span><span class="chip" data-ev>CrewAI</span>
+            <span class="chip" data-ev>AutoGen</span><span class="chip" data-ev>BeeAI</span>
+            <span class="chip" data-ev>MCP</span><span class="chip" data-ev>Multi-agent orchestration</span><span class="chip" data-ev>Multimodal AI</span>
+            <span class="chip" data-ev>Prompt engineering</span><span class="chip" data-ev>Tool calling</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal reveal-delay-2">
+          <h3>Retrieval &amp; Vector Search</h3>
+          <div class="chip-row">
+            <span class="chip" data-ev>Vector databases</span><span class="chip" data-ev>FAISS</span>
+            <span class="chip" data-ev>Chroma</span><span class="chip" data-ev>LlamaIndex</span>
+            <span class="chip" data-ev>Embeddings</span><span class="chip" data-ev>Hybrid retrieval</span>
+            <span class="chip" data-ev>Gradio</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal reveal-delay-3">
+          <h3>Machine Learning</h3>
+          <div class="chip-row">
+            <span class="chip" data-ev>PyTorch</span><span class="chip">TensorFlow</span><span class="chip">Scikit-learn</span>
+            <span class="chip" data-ev>Deep RL (PPO)</span><span class="chip" data-ev>Contextual bandits</span>
+            <span class="chip" data-ev>Transformers</span><span class="chip" data-ev>Hugging Face</span>
+            <span class="chip" data-ev>BERT</span><span class="chip">MDPs</span><span class="chip">Statistical modeling</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal reveal-delay-4">
+          <h3>Languages</h3>
+          <div class="chip-row">
+            <span class="chip" data-ev>Python</span><span class="chip" data-ev>C++</span><span class="chip" data-ev>C</span>
+            <span class="chip" data-ev>C#</span><span class="chip" data-ev>JavaScript</span><span class="chip" data-ev>SQL</span>
+            <span class="chip">R</span><span class="chip" data-ev>Solidity</span><span class="chip">Bash</span>
+            <span class="chip" data-ev>HTML/CSS</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal reveal-delay-5">
+          <h3>Cloud &amp; Distributed Systems</h3>
+          <div class="chip-row">
+            <span class="chip">AWS</span><span class="chip">Docker</span><span class="chip" data-ev>Kubernetes</span>
+            <span class="chip" data-ev>Knative</span><span class="chip" data-ev>Serverless</span><span class="chip" data-ev>Sun RPC</span>
+            <span class="chip">Linux</span><span class="chip">Grafana</span><span class="chip">Network security</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal reveal-delay-6">
+          <h3>Data &amp; NLP</h3>
+          <div class="chip-row">
+            <span class="chip" data-ev>NumPy</span><span class="chip" data-ev>Pandas</span><span class="chip">spaCy</span>
+            <span class="chip">NLTK</span><span class="chip">BeautifulSoup</span><span class="chip">Scrapy</span>
+            <span class="chip" data-ev>yfinance</span><span class="chip">Clustering</span><span class="chip">Data mining</span>
+            <span class="chip" data-ev>TF-IDF</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal reveal-delay-6">
+          <h3>Web, Mobile &amp; Blockchain</h3>
+          <div class="chip-row">
+            <span class="chip">React</span><span class="chip">React Native</span><span class="chip" data-ev>Firebase</span>
+            <span class="chip" data-ev>Android Studio</span><span class="chip" data-ev>.NET UI</span>
+            <span class="chip" data-ev>Maps API</span><span class="chip" data-ev>Hyperledger Fabric</span><span class="chip">UI/UX</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal reveal-delay-6">
+          <h3>Foundations &amp; Databases</h3>
+          <div class="chip-row">
+            <span class="chip">Algorithm design</span><span class="chip">Complexity analysis</span>
+            <span class="chip">Automata theory</span><span class="chip">Compiler construction</span>
+            <span class="chip" data-ev>MongoDB</span><span class="chip" data-ev>DBMS integration</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="evidence" id="evidence" hidden>
+        <div class="evidence-head">
+          <p class="evidence-title"><span class="k">evidence for</span> <strong id="evidenceFor">—</strong></p>
+          <button class="evidence-close" id="evidenceClose" aria-label="Close evidence panel">clear ✕</button>
+        </div>
+        <ul class="evidence-list" id="evidenceList"></ul>
+      </div>
+    </section>
+
+    <!-- ============ Certifications ============ -->
+    <section id="certifications" class="section reveal" data-screen-label="Certifications">
+      <div class="section-header">
+        <p class="eyebrow">~/certifications</p>
+        <h2>A deliberate path into agentic AI</h2>
+        <p class="section-sub">
+          Not a scattershot list of courses. One advanced program, worked
+          end to end — retrieval, vector search, multimodal generation, and
+          multi-agent orchestration, closed out with a capstone build. Completed
+          August 2026; every certificate is verifiable below.
+        </p>
+      </div>
+
+      <div class="program reveal reveal-delay-1">
+        <div class="program-top">
+          <div class="program-id">
+            <span class="program-mark">IBM</span>
+            <div>
+              <h3>RAG and Agentic AI Professional Certificate</h3>
+              <p class="program-meta">IBM · Coursera · advanced · earned Aug 3, 2026</p>
+              <div class="program-links">
+                <a href="assets/certs/ibm-rag-and-agentic-ai-professional-certificate.pdf" target="_blank" rel="noreferrer">certificate ↗</a>
+                <a href="https://coursera.org/verify/professional-cert/6TGI0KQGL9VK" target="_blank" rel="noreferrer">verify on Coursera ↗</a>
+              </div>
+            </div>
+          </div>
+          <div class="program-progress">
+            <div class="program-progress-top">
+              <span class="program-count">10<span class="of">/10</span></span>
+              <span class="program-count-label">courses complete</span>
+            </div>
+            <div class="program-track" role="img" aria-label="All 10 courses complete">
+              <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i>
+              <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i>
+            </div>
+            <p class="program-note earned">✓ credential awarded</p>
+          </div>
+        </div>
+        <div class="program-skills">
+          <span class="tag">RAG pipelines</span><span class="tag">Vector databases</span>
+          <span class="tag">Multimodal AI</span><span class="tag">LangChain</span>
+          <span class="tag">LangGraph</span><span class="tag">CrewAI</span>
+          <span class="tag">AutoGen</span><span class="tag">BeeAI</span>
+          <span class="tag">Model Context Protocol</span><span class="tag">Tool calling</span>
+          <span class="tag">Multi-agent architectures</span>
+        </div>
+      </div>
+
+      <div class="track reveal">
+
+        <div class="phase">
+          <p class="phase-label"><span class="phase-num">phase 01</span> Generative AI foundations</p>
+          <div class="track-items">
+            <article class="course done">
+              <span class="course-node">01</span>
+              <div class="course-body">
+                <h4>Develop Generative AI Applications: Get Started</h4>
+                <p class="course-meta">IBM · completed Jul 24, 2026</p>
+                <div class="tag-row">
+                  <span class="tag">Prompt engineering</span><span class="tag">LLM apps</span>
+                </div>
+              </div>
+              <a class="course-link" href="assets/certs/01-develop-generative-ai-applications.pdf" target="_blank" rel="noreferrer">certificate ↗</a>
+            </article>
+
+            <article class="course done">
+              <span class="course-node">02</span>
+              <div class="course-body">
+                <h4>Build Multimodal Generative AI Applications</h4>
+                <p class="course-meta">IBM · completed Jul 25, 2026</p>
+                <div class="tag-row">
+                  <span class="tag">Multimodal</span><span class="tag">Vision + text</span>
+                </div>
+              </div>
+              <a class="course-link" href="assets/certs/02-build-multimodal-generative-ai-applications.pdf" target="_blank" rel="noreferrer">certificate ↗</a>
+            </article>
+          </div>
+        </div>
+
+        <div class="phase">
+          <p class="phase-label"><span class="phase-num">phase 02</span> Retrieval-augmented generation</p>
+          <div class="track-items">
+            <article class="course done">
+              <span class="course-node">03</span>
+              <div class="course-body">
+                <h4>Build RAG Applications: Get Started</h4>
+                <p class="course-meta">IBM · completed Jul 24, 2026</p>
+                <div class="tag-row">
+                  <span class="tag">RAG</span><span class="tag">Chunking</span><span class="tag">Grounding</span>
+                </div>
+              </div>
+              <a class="course-link" href="assets/certs/03-build-rag-applications.pdf" target="_blank" rel="noreferrer">certificate ↗</a>
+            </article>
+
+            <article class="course done">
+              <span class="course-node">04</span>
+              <div class="course-body">
+                <h4>Vector Databases for RAG: An Introduction</h4>
+                <p class="course-meta">IBM · completed Jul 25, 2026</p>
+                <div class="tag-row">
+                  <span class="tag">Embeddings</span><span class="tag">Chroma</span><span class="tag">Indexing</span>
+                </div>
+              </div>
+              <a class="course-link" href="assets/certs/04-vector-databases-for-rag.pdf" target="_blank" rel="noreferrer">certificate ↗</a>
+            </article>
+
+            <article class="course done">
+              <span class="course-node">05</span>
+              <div class="course-body">
+                <h4>Advanced RAG with Vector Databases and Retrievers</h4>
+                <p class="course-meta">IBM · completed Jul 25, 2026</p>
+                <div class="tag-row">
+                  <span class="tag">Hybrid retrieval</span><span class="tag">Re-ranking</span>
+                </div>
+              </div>
+              <a class="course-link" href="assets/certs/05-advanced-rag-vector-databases-retrievers.pdf" target="_blank" rel="noreferrer">certificate ↗</a>
+            </article>
+          </div>
+        </div>
+
+        <div class="phase">
+          <p class="phase-label"><span class="phase-num">phase 03</span> Agentic systems</p>
+          <div class="track-items">
+            <article class="course done">
+              <span class="course-node">06</span>
+              <div class="course-body">
+                <h4>Fundamentals of Building AI Agents</h4>
+                <p class="course-meta">IBM · completed Jul 27, 2026</p>
+                <div class="tag-row">
+                  <span class="tag">Agent loops</span><span class="tag">Tool calling</span>
+                </div>
+              </div>
+              <a class="course-link" href="assets/certs/06-fundamentals-of-building-ai-agents.pdf" target="_blank" rel="noreferrer">certificate ↗</a>
+            </article>
+
+            <article class="course done">
+              <span class="course-node">07</span>
+              <div class="course-body">
+                <h4>Agentic AI with LangChain and LangGraph</h4>
+                <p class="course-meta">IBM · completed Jul 27, 2026</p>
+                <div class="tag-row">
+                  <span class="tag">LangChain</span><span class="tag">LangGraph</span><span class="tag">State machines</span>
+                </div>
+              </div>
+              <a class="course-link" href="assets/certs/07-agentic-ai-langchain-langgraph.pdf" target="_blank" rel="noreferrer">certificate ↗</a>
+            </article>
+
+            <article class="course done">
+              <span class="course-node">08</span>
+              <div class="course-body">
+                <h4>Agentic AI with LangGraph, CrewAI, AutoGen and BeeAI</h4>
+                <p class="course-meta">IBM · completed Jul 27, 2026</p>
+                <div class="tag-row">
+                  <span class="tag">Multi-agent</span><span class="tag">CrewAI</span><span class="tag">AutoGen</span><span class="tag">BeeAI</span>
+                </div>
+              </div>
+              <a class="course-link" href="assets/certs/08-agentic-ai-langgraph-crewai-autogen-beeai.pdf" target="_blank" rel="noreferrer">certificate ↗</a>
+            </article>
+
+            <article class="course done">
+              <span class="course-node">09</span>
+              <div class="course-body">
+                <h4>Build AI Agents using MCP</h4>
+                <p class="course-meta">IBM · completed Jul 27, 2026</p>
+                <div class="tag-row">
+                  <span class="tag">Model Context Protocol</span><span class="tag">Tool servers</span>
+                </div>
+              </div>
+              <a class="course-link" href="assets/certs/09-build-ai-agents-using-mcp.pdf" target="_blank" rel="noreferrer">certificate ↗</a>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="phase">
+          <p class="phase-label"><span class="phase-num">phase 04</span> Capstone</p>
+          <div class="track-items">
+            <article class="course done capstone">
+              <span class="course-node">10</span>
+              <div class="course-body">
+                <h4>RAG and Agentic AI Capstone Project</h4>
+                <p class="course-meta">IBM · completed Aug 3, 2026</p>
+                <div class="tag-row">
+                  <span class="tag">End-to-end build</span><span class="tag">RAG + agents</span><span class="tag">Evaluation</span>
+                </div>
+              </div>
+              <a class="course-link" href="assets/certs/10-rag-and-agentic-ai-capstone-project.pdf" target="_blank" rel="noreferrer">certificate ↗</a>
+            </article>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="other-certs reveal">
+        <p class="earlier-label">other certifications</p>
+        <div class="other-cert-grid">
+          <div class="other-cert">
+            <span class="oc-issuer">Udemy</span>
+            <span class="oc-name">Machine Learning A–Z: AI, Python &amp; R</span>
+            <span class="oc-date">Sep 2023</span>
+          </div>
+          <div class="other-cert">
+            <span class="oc-issuer">Udemy</span>
+            <span class="oc-name">Mastering Data Structures &amp; Algorithms in C / C++</span>
+            <span class="oc-date">Jul 2023</span>
+          </div>
+          <div class="other-cert">
+            <span class="oc-issuer">Udemy</span>
+            <span class="oc-name">Python 3.11</span>
+            <span class="oc-date">May 2023</span>
+          </div>
+          <div class="other-cert">
+            <span class="oc-issuer">Coursera</span>
+            <span class="oc-name">Java for Beginners</span>
+            <span class="oc-date">Sep 2023</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Education ============ -->
+    <section id="education" class="section section-alt reveal" data-screen-label="Education">
+      <div class="section-header">
+        <p class="eyebrow">~/education</p>
+        <h2>Education</h2>
+      </div>
+
+      <div class="edu-grid">
+        <div class="edu-card reveal reveal-delay-1">
+          <span class="edu-badge">Graduated</span>
+          <div class="edu-icon"><img src="assets/Kentucky_Wildcats.png" alt="University of Kentucky logo" /></div>
+          <span class="edu-year">2024 — 2026</span>
+          <h3>Master's in Computer Science</h3>
+          <p class="edu-loc">University of Kentucky, USA</p>
+          <div class="edu-tags">
+            <span>AI/ML</span><span>Distributed Systems</span><span>Systems Programming</span>
+          </div>
+        </div>
+
+        <div class="edu-card reveal reveal-delay-2">
+          <span class="edu-badge">Graduated</span>
+          <div class="edu-icon"><img src="assets/thapar.svg" alt="Thapar Institute logo" /></div>
+          <span class="edu-year">2018 — 2022</span>
+          <h3>B.Tech in Electronics &amp; Computers</h3>
+          <p class="edu-loc">Thapar Institute, India</p>
+          <div class="edu-tags">
+            <span>Embedded Systems</span><span>Cloud Computing</span><span>Digital Design</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="courses" class="reveal">
+        <h3 class="sub-heading">Selected coursework</h3>
+
+        <div class="pill-toggle" role="tablist" aria-label="Coursework by degree">
+          <button class="pill-toggle-btn active" data-target="masters-courses">Master's</button>
+          <button class="pill-toggle-btn" data-target="bachelors-courses">Bachelor's</button>
+        </div>
+
+        <div id="masters-courses" class="courses-panel active">
+          <div class="course-grid">
+            <div class="course-item">Generative Machine Learning</div>
+            <div class="course-item">Algorithm Design</div>
+            <div class="course-item">Network Security</div>
+            <div class="course-item">Compiler Design</div>
+            <div class="course-item">Models of Computation</div>
+            <div class="course-item">Data Mining</div>
+            <div class="course-item">Modern Operating Systems</div>
+            <div class="course-item">Special Topics in Systems</div>
+            <div class="course-item">Sequential Decision Making</div>
+          </div>
+        </div>
+
+        <div id="bachelors-courses" class="courses-panel">
+          <div class="course-grid">
+            <div class="course-item">Computer Programming</div>
+            <div class="course-item">Electronic Engineering</div>
+            <div class="course-item">Object Oriented Programming</div>
+            <div class="course-item">Embedded Systems</div>
+            <div class="course-item">Signals and Systems</div>
+            <div class="course-item">Digital System Design</div>
+            <div class="course-item">Optimization Techniques</div>
+            <div class="course-item">Operating Systems</div>
+            <div class="course-item">Software Engineering</div>
+            <div class="course-item">Data Structures and Algorithms</div>
+            <div class="course-item">Digital Signal Processing</div>
+            <div class="course-item">Computer Architecture</div>
+            <div class="course-item">Computer and Communication Networks</div>
+            <div class="course-item">Database Management Systems</div>
+            <div class="course-item">Theory of Computation</div>
+            <div class="course-item">Digital Communication</div>
+            <div class="course-item">MOS Circuit Design</div>
+            <div class="course-item">Machine Learning</div>
+            <div class="course-item">Network Security</div>
+            <div class="course-item">Cloud Computing</div>
+            <div class="course-item">Big Data Analytics</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Contact ============ -->
+    <section id="contact" class="section reveal" data-screen-label="Contact">
+      <div class="section-header">
+        <p class="eyebrow">~/contact</p>
+        <h2>Let's talk</h2>
+        <p class="section-sub">Roles, projects, or collaborations — my inbox is open.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-copy reveal reveal-delay-1">
+          <p>
+            The fastest way to reach me is email or LinkedIn. I'm currently open
+            to AI/GenAI engineering, software engineering, and ML engineering
+            roles for 2026 and beyond.
+          </p>
+          <ul class="contact-list">
+            <li>
+              <span class="k">email</span>
+              <a href="mailto:aviralk.garg@gmail.com">aviralk.garg@gmail.com</a>
+              <button class="copy-btn" data-copy="aviralk.garg@gmail.com" aria-label="Copy email address">copy</button>
+            </li>
+            <li>
+              <span class="k">phone</span>
+              <a href="tel:+18594339706">+1 (859) 433-9706</a>
+              <button class="copy-btn" data-copy="+1 (859) 433-9706" aria-label="Copy phone number">copy</button>
+            </li>
+            <li><span class="k">github</span><a href="https://github.com/aviral07-code" target="_blank" rel="noreferrer">github.com/aviral07-code</a></li>
+            <li><span class="k">linkedin</span><a href="https://www.linkedin.com/in/aviral-garg-011273208" target="_blank" rel="noreferrer">/in/aviral-garg-011273208</a></li>
+            <li><span class="k">work auth</span><span class="v-plain">F-1 OPT / STEM-OPT eligible</span></li>
+            <li><span class="k">export</span><span class="v-plain">Eligible for employer-sponsored deemed-export licensing (ITAR / EAR) for access to export-controlled technical data</span></li>
+            <li><span class="k">based in</span><span class="v-plain">Lexington, Kentucky · open to relocation</span></li>
+          </ul>
+
+          <div class="contact-actions">
+            <a href="assets/resume.pdf" class="btn secondary" target="_blank" rel="noreferrer">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+              Resume PDF
+            </a>
+            <button class="btn secondary" id="printResume">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6"/><rect x="4" y="9" width="16" height="8" rx="2"/><path d="M8 17h8v4H8z"/></svg>
+              Print this page
+            </button>
+          </div>
+        </div>
+
+        <form class="contact-form reveal reveal-delay-2" action="https://formspree.io/f/mpqqqloa" method="POST">
+          <div class="form-row">
+            <label for="name">name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+          </div>
+          <div class="form-row">
+            <label for="email">email</label>
+            <input id="email" name="_replyto" type="email" autocomplete="email" required />
+          </div>
+          <div class="form-row">
+            <label for="message">message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn primary">Send message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Aviral Garg</p>
+    <p>designed &amp; built by hand — vanilla HTML/CSS/JS ·
+      <a href="https://github.com/aviral07-code/aviral07-code.github.io" target="_blank" rel="noreferrer">view source</a>
+    </p>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+  <!-- ============ Command palette ============ -->
+  <div class="cmdk" id="cmdk" hidden>
+    <div class="cmdk-backdrop" data-cmdk-close></div>
+    <div class="cmdk-panel" role="dialog" aria-modal="true" aria-label="Search this site">
+      <div class="cmdk-input-row">
+        <span class="cmdk-prompt">&gt;</span>
+        <input id="cmdkInput" type="text" placeholder="Jump to a section, project, or certificate…" autocomplete="off" spellcheck="false" aria-label="Search query" />
+        <kbd class="cmdk-esc" data-cmdk-close>esc</kbd>
+      </div>
+      <ul class="cmdk-list" id="cmdkList" role="listbox" aria-label="Results"></ul>
+      <div class="cmdk-foot">
+        <span><kbd>↑</kbd><kbd>↓</kbd> navigate</span>
+        <span><kbd>↵</kbd> open</span>
+        <span><kbd>esc</kbd> close</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
